@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja de Sorvetes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <img src="https://sdmntprwestus2.oaiusercontent.com/files/00000000-089c-61f8-b076-38ee07786b50/raw?se=2025-06-18T23%3A39%3A15Z&sp=r&sv=2024-08-04&sr=b&scid=052e6931-845a-5808-b92b-67e10acc75d2&skoid=789f404f-91a9-4b2f-932c-c44965c11d82&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-18T22%3A30%3A47Z&ske=2025-06-19T22%3A30%3A47Z&sks=b&skv=2024-08-04&sig=93bsrtF1jGZubcm6ZzrW9mcXeQ9VUrGVGfOia7U1mP4%3D" alt="Logo Sorvete">
+    <span>Delícias Geladas</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#montar">Monte o seu</a></li>
+    <li><a href="#carrinho">Carrinho</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+  <header>
+    <h1>🍦Delicias Geladas</h1>
+  </header>
+
+  <main>
+    <section class="cardapio"id="montar">
+      <h2>Monte seu sorvete</h2>
+
+      <label>Sabor:
+        <select id="sabor">
+          <option value="Baunilha">Baunilha</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Morango">Morango</option>
+          <option value="Manga">Manga</option>
+        </select>
+      </label>
+
+      <label>Toppings:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Granulado"> Granulado</label>
+        <label><input type="checkbox" value="Confete"> Confete</label>
+        <label><input type="checkbox" value="Paçoca"> Paçoca</label>
+      </div>
+
+      <label>Caldas:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Chocolate"> Chocolate</label>
+        <label><input type="checkbox" value="Caramelo"> Caramelo</label>
+        <label><input type="checkbox" value="Morango"> Morango</label>
+      </div>
+
+      <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="carrinho"id="carrinho">
+      <h2>🛒 Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
